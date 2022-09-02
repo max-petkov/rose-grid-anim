@@ -1,0 +1,52 @@
+/* Variables */
+:root {
+    --color-rose: #f07298;
+}
+
+/* General */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    padding: 0 64px;
+}
+
+@media only screen and (max-width: 768.9px){
+    section {
+        padding: 0 16px;
+    }
+}
+
+.container {
+    max-width: 936px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Rose Grid */
+.rose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    grid-template-rows: repeat(4, max-content);
+}
+
+.rose {
+    max-width: 128px;
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 768.9px) {
+    .rose-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
