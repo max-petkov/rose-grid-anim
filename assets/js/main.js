@@ -29,7 +29,7 @@ function roseGrid(prop) {
     }
 
     if (!randomPosition) {
-      let variantNumber = 0;
+      let variantNumber = 1;
       const roses = document.querySelectorAll(".rose");
 
       setInterval(function () {
@@ -45,7 +45,7 @@ function roseGrid(prop) {
 }
 
 roseGrid({
-  durationPosition: 2000,
+  durationPosition: 1500,
   randomPosition: false,
   animation: {
     ease: "ease-in",
