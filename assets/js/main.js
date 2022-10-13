@@ -52,3 +52,5 @@ roseGrid({
     duration: 0.4,
   },
 });
+
+console.log("%c inspired by https://valyocreative.xyz/ 🚀", "font-weight: bold; color: #121212;");
